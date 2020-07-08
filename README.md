@@ -1,7 +1,7 @@
 # Mobile Application Development - Assignment Semeter 1 2019 at RMIT
 
 ## Movie Night Planner Application
-I was asked to develop an Android application to create and schedule movie viewing events, and invite attendees. 
+I was asked to develop an Android application with MVC architecture to create and schedule movie viewing events, and invite attendees. 
 
 The user interface provides functionalities for: 
 - Creating and editing events 
