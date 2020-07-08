@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/titleCreateEventEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="@string/event_title"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/venueCreateEventEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/event_venue"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_below="@+id/titleCreateEventEditText"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/locationCreateEventEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/event_location"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_below="@+id/venueCreateEventEditText"
+            android:layout_centerHorizontal="true" />
+
+        <GridLayout
+            android:id="@+id/dateTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_below="@id/locationCreateEventEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/startDateCreateEventTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="@string/event_start_date" />
+
+            <TextView
+                android:id="@+id/startTimeCreateEventTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="@string/start_time" />
+
+            <TextView
+                android:id="@+id/endDateCreateEventTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="@string/end_date" />
+
+            <TextView
+                android:id="@+id/endTimeCreateEventTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="@string/end_time" />
+        </GridLayout>
+
+
+        <TextView
+            android:id="@+id/idCreateEventTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_id"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/movieCreateEventSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dateTimeView">
+        </Spinner>
+
+        <Button
+            android:id="@+id/showAttendeesCreateEventButton"
+            android:text="@string/show_attendees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieCreateEventSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp"/>
+
+        <GridLayout
+            android:id="@+id/cancelSaveButtonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showAttendeesCreateEventButton"
+            android:layout_centerHorizontal="true"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/createEventSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+        </GridLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
