@@ -1,4 +1,4 @@
-# Mobile Application Development - Assignment Semeter 1 2019 at RMIT
+# Mobile Application Development (High Distinction) - Assignment Semeter 1 2019 at RMIT
 
 ## Movie Night Planner Application
 I was asked to develop an Android application with MVC architecture to create and schedule movie viewing events, and invite attendees. 
